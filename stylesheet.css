@@ -63,6 +63,7 @@ body {
     "directions"
     "aside"
     "footer";
+    max-width: 414px;
 }
 header {
     grid-area: header;
@@ -87,6 +88,7 @@ p, a {
 menu{
     display: flex;
     justify-content:space-evenly;
+    max-width: 414px;
     margin: 20px;
     margin-left: 0;
     list-style: none;
@@ -101,28 +103,32 @@ menu li a{
    
 }
 .tacos img{
-    width: 83.5%;
+    max-width: 414px;
     display: flex;
    
 }
  .tacos p{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    max-width: 414px; 
     margin:  10px;
     margin-left: 0;
-    padding-right: 75px;
-    padding-left: 10px;   
+    padding-left: 10px;
+    padding-right: 10px;   
 
 }
 .details{
-    display: block;
+    display: flex;
+    flex-direction: column; 
+    max-width:414px;
     margin:  10px;
+    align-items: center;
    
 }
 .details h2{
     display: flex;
-    width: 100%; 
+    max-width: 414px; 
     justify-content: center;
     font-size: 1.5em;    
 
@@ -130,7 +136,7 @@ menu li a{
 .details ul{
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    max-width: 414px; 
     justify-content: center; 
     padding-left: 10px;  
 
@@ -142,10 +148,12 @@ menu li a{
 .ingredients{
     display: flex; 
     flex-direction: column;
+    max-width: 414px;
     margin:  10px;
 }
 .ingredients h2{
     display: flex; 
+    max-width: 414px; 
     justify-content: center;
     font-weight: bold;
 
@@ -153,22 +161,33 @@ menu li a{
 .ingredients ul{
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    max-width: 414px; 
     justify-content: center; 
     padding-left: 10px;  
     list-style-type: inherit;
-     margin-left: 10px;
+    margin-left: 10px;
 }
 .directions{
-    display: block; 
+    
+    margin-left: 20px; 
+    margin-top: 10px;  
+    margin-bottom: 10px;  
+    display: flex;
+    flex-direction: column;
+    max-width: 414px; 
+    justify-content: center; 
     margin-left: 20px; 
     margin-top: 10px;  
     margin-bottom: 10px; 
    
 }
+.directions ol li{
+    margin-bottom: 10px; 
+}
 .directions h2{
     display: flex; 
     justify-content: center;
+    max-width: 414px;
     font-weight: bold;
 }
 .directions ol{
@@ -184,32 +203,36 @@ menu li a{
 .side-dishes{
     display: flex;
     flex-direction: column;
-     background-color:#7ABFBF;
-     padding:  10px;
+    max-width: 414px;
+    background-color:#7ABFBF;
+    padding:  10px;
 }
 .side-dishes h2{
     display: flex; 
+    max-width: 414px;
     justify-content: center;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .wrapper{
     display:grid;
+    max-width: 414px;
     grid-template-columns: 1fr 2fr;
     justify-content:flex-start;
 
 }
 .wrapper img{
-    width: auto;
-    height: 50%;
-   
+    width: 100%;
+    margin: 10px;  
 }
 .wrapper .text{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-    /* width: 80%;  */
+    margin: 10px;
+    padding-left: 10px;
    
     
     
@@ -234,11 +257,45 @@ menu li a{
 }
 nav{
     display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 0;
-    width: 100%;
+    max-width: 414px;
     border-bottom:2px solid  #0D0D0D;
+}
+nav div {
+    flex: 0 0 100px;
+    /* width: calc(100% / 3); */
+   
+   
+   
+}
+nav .menu{
+    order: 0; 
+    width: 25% ;
+    margin-left: 10px; 
+}
+nav .logo{
+    order: 1;
+    width: 50%;  
+    background-color: #EB5428;
+    
+}
+nav .login {
+    order: 3;
+    width: 25%;  
+    
+}
 
+.login svg{
+    fill:#EB5428; ;
+}
+ .login a{
+    display: grid;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1em;
+    color: #0D0D0D;
 }
 nav h2{
     display: none;
@@ -248,9 +305,17 @@ nav ul{
     max-height: 0;
     overflow: hidden;
   }
+ nav input:checked ~ ul {
+    max-height: 500px;
+  }
+  nav input {
+    display: none;
+  }
+	
  form{
     display: flex;
     position: absolute;
+    max-width: 414px;
     top: 100px;
     justify-content: center;
     left: 200px;
@@ -262,12 +327,16 @@ form label {
  form input,form label {
     margin: 0.4rem 0;
   }
+  footer{
+    max-width: 414px;
+  }
   footer h2 {
     display: none;
   }
   .social-media{
     display: flex;
     justify-content:space-evenly;
+    max-width: 414px;
     margin: 20px;
     margin-left: 0;
   }
@@ -275,29 +344,33 @@ form label {
     list-style: none;
     text-decoration: none;
     display: grid;
+    max-width: 414px;
     font-size: 1em;
     color: #EB5428;
    
 }
 .Taco-cheesington {
-    display: grid;    
+    display: grid; 
+    max-width: 414px;   
     grid-template-columns: 1fr; 
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 
 }
 .Taco-cheesington  img{
     display: flex;
     grid-row: 1;
-    width: 50%;
-    height: 50%;
-    padding-bottom: 0%;
+    max-width: 50%;
+    height: auto;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 10px;
     align-items: center;
     justify-content: center;
     align-content: center;
-    align-items: center;
+   
 
 }
 .Taco-cheesington  small{
@@ -306,6 +379,7 @@ form label {
     justify-content: center;
     align-content: center;
     align-items: center;
+    font-weight: bold; 
     
 
 }
