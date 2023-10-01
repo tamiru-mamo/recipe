@@ -159,4 +159,33 @@ menu li a{
     list-style-type: inherit;
      margin-left: 10px;
 }
+.directions{
+    display: block; 
+    margin-left: 20px; 
+    margin-top: 10px;  
+    margin-bottom: 10px; 
+   
+}
+.directions h2{
+    display: flex; 
+    justify-content: center;
+    font-weight: bold;
+}
+.directions ol{
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;    
+    margin-left: 10px; 
+    padding-top: 10px;   
+    list-style: decimal;
+    
+}
 
+.side-dishes{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
