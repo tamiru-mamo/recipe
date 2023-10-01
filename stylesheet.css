@@ -318,7 +318,8 @@ nav ul{
     max-width: 414px;
     top: 100px;
     justify-content: center;
-    left: 200px;
+    align-items: center;
+    padding-left: 100px;
  }
 form label {    
     display: none;
