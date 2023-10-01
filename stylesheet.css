@@ -255,12 +255,58 @@ nav ul{
     justify-content: center;
     left: 200px;
  }
-form label {
-    
+form label {    
     display: none;
   }
   
  form input,form label {
     margin: 0.4rem 0;
   }
-  
+  footer h2 {
+    display: none;
+  }
+  .social-media{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 20px;
+    margin-left: 0;
+  }
+  .social-media  a{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    font-size: 1em;
+    color: #EB5428;
+   
+}
+.Taco-cheesington {
+    display: grid;    
+    grid-template-columns: 1fr; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+}
+.Taco-cheesington  img{
+    display: flex;
+    grid-row: 1;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 0%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.Taco-cheesington  small{
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+
