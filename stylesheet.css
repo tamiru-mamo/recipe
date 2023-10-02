@@ -118,33 +118,21 @@ menu li a{
     padding-right: 10px;   
 
 }
-.details{
+#details h2{
     display: flex;
-    flex-direction: column; 
     max-width:414px;
-    margin:  10px;
-    align-items: center;
-   
-}
-.details h2{
-    display: flex;
-    max-width: 414px; 
     justify-content: center;
-    font-size: 1.5em;    
+    align-items: start;
 
 }
-.details ul{
-    display: flex;
-    flex-direction: column;
-    max-width: 414px; 
-    justify-content: center; 
-    padding-left: 10px;  
-
+#details dl{
+    display: flex;     
+    margin-left: 10px;
 }
-.details ul li span{
-    font-weight: bold; 
-
+#details dl dt{
+    font-weight: bold;
 }
+
 .ingredients{
     display: flex; 
     flex-direction: column;
@@ -167,7 +155,7 @@ menu li a{
     list-style-type: inherit;
     margin-left: 10px;
 }
-.directions{
+#directions{
     
     margin-left: 20px; 
     margin-top: 10px;  
@@ -181,16 +169,16 @@ menu li a{
     margin-bottom: 10px; 
    
 }
-.directions ol li{
+#directions ol li{
     margin-bottom: 10px; 
 }
-.directions h2{
+#directions h2{
     display: flex; 
     justify-content: center;
     max-width: 414px;
     font-weight: bold;
 }
-.directions ol{
+#directions ol{
     display: flex;
     flex-direction: column;
     padding-right: 100px;    
@@ -199,25 +187,29 @@ menu li a{
     list-style: decimal;
     
 }
-
-.side-dishes{
+ aside {
     display: flex;
     flex-direction: column;
     max-width: 414px;
     background-color:#7ABFBF;
     padding:  10px;
-}
-.side-dishes h2{
+    /* display: flex;
+    flex-direction: column;
+    max-width:  414px;
+    background-color:#7ABFBF; */
+ }
+ aside h2{
     display: flex; 
     max-width: 414px;
     justify-content: center;
     font-weight: bold;
     padding-bottom: 20px;
-}
-.wrapper{
-    display:grid;
+   
+ }
+ .wrapper{
+    display:flex;
     max-width: 414px;
-    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: 1fr 2fr; */
     justify-content:flex-start;
 
 }
@@ -233,70 +225,48 @@ menu li a{
     align-items: start;
     margin: 10px;
     padding-left: 10px;
-   
-    
     
 }
 .wrapper .text h3{
     font-weight: bold;
 }
-.wrapper .text p:nth-child(3){
+.wrapper .text h3 a{
+    list-style: none;
+    text-decoration: none;
+    display: grid;
+    font-size: 1em;
+    color: #0D0D0D;
+    font-weight: bold;
+}
+.wrapper .text h4 {
+    display: none;
+}
+.wrapper .text .rating h4 {
+    display: none;
+}
+.wrapper .text .rating dt {
     font-weight: bold;
 }
 
+.rating svg:last-child{
+    fill:#F2F2F2;    
+}
+ .star svg:last-child{
+    fill:#EB5428;
+   
+}
 
-.star svg:nth-child(n+1){
-    fill: #EB5428;
-}
-.star svg:nth-child(5){
-    fill:#F2F2F2;
-    ;
-}
-.star2 svg:nth-child(n+1){
-    fill: #EB5428;
-}
 nav{
     display: flex;
     justify-content: space-between;
     position: absolute;
     top: 0;
     max-width: 414px;
-    border-bottom:2px solid  #0D0D0D;
-}
-nav div {
-    flex: 0 0 100px;
-    /* width: calc(100% / 3); */   
-}
-nav .menu{
-    order: 0; 
-    width: 25% ;
-    margin-left: 10px; 
-}
-nav .logo{
-    order: 1;
-    width: 50%;  
-    background-color: #EB5428;
-    
-}
-nav .login {
-    order: 3;
-    width: 25%;  
-    
-}
-
-.login svg{
-    fill:#EB5428; ;
-}
- .login a{
-    display: grid;
-    list-style: none;
-    text-decoration: none;
-    font-size: 1em;
-    color: #0D0D0D;
-}
+    /* border-bottom:2px solid  #0D0D0D; */
+    background-color: greenyellow;
+    }
 nav h2{
-    display: none;
-   
+    display: none;   
 }
 nav ul{
     max-height: 0;
@@ -305,11 +275,28 @@ nav ul{
  nav input:checked ~ ul {
     max-height: 500px;
   }
-  nav input {
+nav input {
     display: none;
   }
-	
- form{
+  #dropdown svg{
+    display:flex;
+    flex-direction: column;
+  
+  }
+  #logo{
+    overflow: unset;
+}
+#sign-in{
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold; 
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+   
+}	
+form{
     display: flex;
     position: absolute;
     max-width: 414px;
