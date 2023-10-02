@@ -265,10 +265,7 @@ nav{
 }
 nav div {
     flex: 0 0 100px;
-    /* width: calc(100% / 3); */
-   
-   
-   
+    /* width: calc(100% / 3); */   
 }
 nav .menu{
     order: 0; 
@@ -350,7 +347,7 @@ form label {
     color: #EB5428;
    
 }
-.Taco-cheesington {
+.taco-cheesington {
     display: grid; 
     max-width: 414px;   
     grid-template-columns: 1fr; 
@@ -360,7 +357,7 @@ form label {
     /* margin-left: 50px; */
 
 }
-.Taco-cheesington  img{
+.taco-cheesington  img{
     display: flex;
     grid-row: 1;
     max-width: 50%;
@@ -374,7 +371,7 @@ form label {
    
 
 }
-.Taco-cheesington  small{
+.taco-cheesington  small{
     grid-row: 2;
     display: flex;
     justify-content: center;
@@ -385,3 +382,31 @@ form label {
 
 }
 
+@media only screen and (min-width:414px) and (max-width:768px) {
+    nav{
+
+        max-width: 768px;
+    }
+    nav ul li a  {
+        display: grid;
+        position: relative;
+        top: 50px;
+        max-width: 768px;
+        list-style: none;
+        text-decoration: none;
+        font-size: 0.5em;
+        color: #EB5428;
+        margin-right: 10px;
+
+    }
+    nav ul li a  img{
+        /* width: calc(768px/ 7); */
+         width: 30px; 
+    }
+   
+      nav ul   {
+        display: flex;
+        overflow: visible;
+      }
+     
+  }
