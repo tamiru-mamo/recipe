@@ -363,15 +363,28 @@ form{
     justify-content: center;
     align-items: center;
     padding-left: 100px;
-    background-color: #F2F2F2;
+    
  }
 form label {    
     display: none;
+    
   }
   
  form input,form label {
     margin: 0.4rem 0;
+    background-color: white;
+    border:2px solid #EB5428;
+    /* background-color: #F2F2F2; */
   }
+  button{
+      background-color: #EB5428;
+  }
+button svg{
+    fill: #EB5428;
+    stroke: #ffffff;
+}
+
+ 
   footer{
     max-width: 414px;
     background-color: #ffffff;
