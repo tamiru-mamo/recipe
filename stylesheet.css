@@ -361,24 +361,27 @@ form{
  }
 form label {    
     display: none;
+   
       
   }
   
  form input,form label {
     margin: 0.4rem 0;
     background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
     border:2px solid #EB5428;
     
   }
   button{
-      background-color: #EB5428;
+      background-color: #EB5428;     
      
   }
 button svg{
     fill: #EB5428;
-    stroke: #ffffff;
-    
+    stroke: #ffffff;    
 }
+
 
  
   footer{
