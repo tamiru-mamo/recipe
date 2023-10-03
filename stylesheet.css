@@ -63,7 +63,7 @@ body {
     "directions"
     "aside"
     "footer";
-    max-width: 414px;
+    
 }
 header {
     grid-area: header;
@@ -259,30 +259,7 @@ menu li a{
    
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    width: 100%; 
-    background-color: #ffffff;  
-   
-    }
-/* nav h2{
-    display: none;   
-}
-nav ul{
-    max-height: 0;
-    overflow: hidden;
-  }
- nav input:checked ~ ul {
-    max-height: 500px;
-  }
-nav input {
-    display: none;
-  } */
-
-  nav {
+nav {
     grid-area: nav;
     min-width: 414px;
     background-color: #ffffff;
@@ -340,30 +317,38 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
     height: 1px;
     width: 1px;
 }
-  #logo{
+/* #dropdown span svg{
     display:flex;
-    position: absolute;  
-    background-color: #EB5428;    
-    padding-right:40px;
-    padding-left:40px;
+    justify-content: flex-end;
+    position: absolute; 
+} */
+#logo{
+    display:flex;
+    position: absolute; 
     justify-content: center;
-    align-items: center;
-    top: 0px;
-    left:50px;
+    align-items: center; 
+    background-color: #EB5428;
+    top: 0px; 
+    left:150px;     
+    padding-right:40px;
+    padding-left:40px; 
+    height: 20px;
+    
+    
 }
 #sign-in{
     display:flex;
     flex-direction: column;
-     position: absolute;
-     top:0;
-     left:350px;
-     width: 100%;
+    position: absolute;
+    top:0;
+    left:320px;
+    width: 100%;
     list-style: none;
     text-decoration: none;
     font-weight: bold; 
     justify-content: flex-end;
-    flex-wrap: nowrap;
-  
+    padding-top: 0%;
+    /* flex-wrap: nowrap; */  
    
 }
 #sign-in svg{
