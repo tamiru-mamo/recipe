@@ -283,6 +283,8 @@ nav li a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    color: #EB5428;
+    font-weight: bold;
 }
 nav label {
     cursor: pointer;
@@ -341,6 +343,7 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
     width: 100%;
     list-style: none;
     text-decoration: none;
+    color: #0D0D0D;
     font-weight: bold; 
     justify-content: flex-end;
     padding-top: 0%;
@@ -349,6 +352,8 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 }
 #sign-in svg{
     display:flex;
+    color: #0D0D0D;
+
 }
 
 form{
@@ -507,6 +512,12 @@ button svg{
             justify-content: center;            
             z-index: 7;    
          }
+         header h1{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            
+        }
     
     menu{
         display: flex;
@@ -651,16 +662,16 @@ button svg{
      }
    
      header{
-        max-width: 1200px;
+        min-width: 1200px;
      }
      header h1{
-        max-width: 1200px;
+        min-width: 1200px;
         display: flex;
         justify-content: center;
         margin-bottom: 10px;       
      }
      .grid-container{
-        max-width: 1200px;
+        min-width: 1200px;
         display: flex;
         font-weight: bold;
      }
@@ -688,9 +699,10 @@ button svg{
         max-width: 540px;
         }
     #details{
-        max-width: 1200px;
+        min-width: 1200px;
         display: flex;
         margin: 0 auto;
+        padding-top: 5px;
         justify-content: space-between;
         flex-wrap: wrap;
         background-color: #0D0D0D;  
