@@ -383,7 +383,7 @@ form label {
      
   }
 button svg{
-    fill: #EB5428;
+    /* fill: #EB5428; */
     stroke: #ffffff;    
 }
 
