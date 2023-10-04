@@ -101,8 +101,19 @@ menu li a{
     display: grid;
     font-size: 1em;
     color: #EB5428;
+    
    
 }
+menu li a:hover {
+   background-color: #EB5428;
+   color: #ffffff;    
+   
+}
+menu li a svg:hover {
+    background-color:transparent;
+    stroke:#ffffff  
+    
+ }
 .tacos img{
     max-width: 414px;
     display: flex;
@@ -250,6 +261,9 @@ menu li a{
 .wrapper .text .rating dt {
     font-weight: bold;
 }
+.text:hover{
+    background-color: burlywood;
+}
 
 .rating svg:last-child{
     fill:#F2F2F2;    
@@ -340,14 +354,12 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
     position: absolute;
     top:0;
     left:320px;
-    width: 100%;
     list-style: none;
     text-decoration: none;
     color: #0D0D0D;
     font-weight: bold; 
     justify-content: flex-end;
     padding-top: 0%;
-    /* flex-wrap: nowrap; */  
    
 }
 #sign-in svg{
@@ -355,7 +367,20 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
     color: #0D0D0D;
 
 }
+#sign-in:hover{
+    color: white;
+    background-color: #EB5428;
+    stroke: #ffffff;
+     
+    
+ }
 
+#sign-in svg:hover{
+   
+    stroke: #ffffff;
+   
+ 
+}
 form{
     display: flex;
     position: absolute;
@@ -364,6 +389,7 @@ form{
     justify-content: center;
     align-items: center;
  }
+
 form label {    
     display: none;
    
@@ -378,6 +404,9 @@ form label {
     border:2px solid #EB5428;
     
   }
+  form input:hover{
+    border:2px solid black;
+   }
   button{
       background-color: #EB5428;     
      
@@ -414,6 +443,9 @@ button svg{
     font-size: 1em;
     color: #EB5428;
    
+}
+.social-media a svg:hover{
+    background-color:#2b0303;
 }
 .taco-cheesington {
     display: grid; 
@@ -464,14 +496,17 @@ button svg{
             top: 0; 
                       
         }
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-            max-height: 200px;
-            overflow: visible;
-            background-color: #ffffff;
-          }
-         
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        max-height: 200px;
+        overflow: visible;
+        background-color: #ffffff;
+        }
+        nav ul li a:hover {
+            background-color:  #EB5428;
+            color: #ffffff;
+            }   
      
         nav li img {
             display: block;
@@ -616,7 +651,10 @@ button svg{
         padding-left: 150px;
         overflow: visible;
       }   
- 
+      nav ul li a:hover {
+        background-color:  #EB5428;
+        color: #ffffff;
+        }  
     nav li img {
         display: block;
         top: 0px;
