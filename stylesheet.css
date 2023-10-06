@@ -256,6 +256,7 @@ menu li a svg:hover {
     font-size: 1em;
     color: #0D0D0D;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .wrapper .text h4 {
     display: none;
@@ -621,18 +622,19 @@ button svg{
         justify-content: space-between;
         }
     footer{
-        max-width: 768px; 
+        min-width: 768px; 
         }
     #footer-grid{
         display: flex;
+        flex-direction: column;
         flex-direction: row-reverse;
-        max-width: 768px; 
-        justify-content: space-between;
+        /* max-width: 768px;  */
+        /* justify-content: space-between; */
         margin-top:10px ;   
         }
-    #footer-grid .taco-cheesington{
+    /* #footer-grid .taco-cheesington{
         order: 1;}  
-  }
+  } */
 
   @media only screen  and (min-width:1200px) {
 
