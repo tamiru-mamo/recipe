@@ -512,6 +512,7 @@ button svg{
         max-height: 200px;
         overflow: visible;
         background-color: #ffffff;
+        max-width: 70%;
         }
         nav ul li a:hover {
             background-color:  #EB5428;
@@ -542,6 +543,8 @@ button svg{
             position: absolute;
             top:0;
             left:650px;
+            justify-content: center;
+            align-items: center;
                   
            
         }
@@ -661,6 +664,7 @@ button svg{
         left: 50px;
         padding-left: 150px;
         overflow: visible;
+        max-width: 70%;
       }   
       nav ul li a:hover {
         background-color:  #EB5428;
@@ -686,18 +690,21 @@ button svg{
         margin-top: -4px; 
         z-index: 5;         
        }
+
    #sign-in{
            display:flex;
            flex-direction: column;
            position: absolute;
            top:0px;
-           left:1000px; 
-           list-style: none;
-           text-decoration: none;
-           font-weight: bold; 
-           justify-content: flex-end;                  
+           left:1000px;  
+           padding-top: 3%;
+           justify-content: center;
+           align-items: center;             
           
        }
+       #sign-in svg{
+        display:flex;
+    }
     form{
          min-width: 1200px;
         box-sizing: border-box;
