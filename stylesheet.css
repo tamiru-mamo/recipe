@@ -101,7 +101,7 @@ menu li a{
     display: grid;
     font-size: 1em;
     color: #EB5428;
-    
+    text-transform:uppercase;
    
 }
 menu li a:hover {
@@ -136,6 +136,7 @@ menu li a svg:hover {
     justify-content: center;
     align-items: start;
     background-color: #F2F2F2;
+    text-transform: uppercase;
 
 }
 #details dl{
@@ -158,6 +159,7 @@ menu li a svg:hover {
     max-width: 414px; 
     justify-content: center;
     font-weight: bold;
+    text-transform: uppercase;
 
 }
 .ingredients ul{
@@ -191,6 +193,8 @@ menu li a svg:hover {
     justify-content: center;
     max-width: 414px;
     font-weight: bold;
+    padding-bottom: 20px;
+    text-transform: uppercase;
 }
 #directions ol{
     display: flex;
@@ -218,6 +222,7 @@ menu li a svg:hover {
     justify-content: center;
     font-weight: bold;
     padding-bottom: 20px;
+    text-transform: uppercase;
    
  }
  .wrapper{
@@ -299,6 +304,7 @@ nav li a {
     text-decoration: none;
     color: #EB5428;
     font-weight: bold;
+    text-transform: uppercase;
 }
 nav label {
     cursor: pointer;
@@ -442,6 +448,8 @@ button svg{
     max-width: 414px;
     font-size: 1em;
     color: #EB5428;
+    text-transform: uppercase;
+
    
 }
 .social-media a svg:hover{
@@ -680,12 +688,11 @@ button svg{
            flex-direction: column;
            position: absolute;
            top:0px;
-           left:1050px;
+           left:900px; 
            list-style: none;
            text-decoration: none;
            font-weight: bold; 
-           justify-content: flex-end;
-           padding-top: 0%;          
+           justify-content: flex-end;                  
           
        }
     form{
